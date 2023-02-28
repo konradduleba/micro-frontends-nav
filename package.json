@@ -1,8 +1,8 @@
 {
   "name": "@dulcon/nav",
   "scripts": {
-    "start": "webpack serve",
-    "start:standalone": "webpack serve --env standalone",
+    "start": "webpack serve --env standalone",
+    "start:alternate": "webpack serve",
     "build": "concurrently yarn:build:*",
     "build:webpack": "webpack --mode=production",
     "analyze": "webpack --mode=production --env analyze",

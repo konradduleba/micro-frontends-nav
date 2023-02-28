@@ -2,8 +2,38 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-.navigation {
-  background-color: red;
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 240px;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--menu-background);
+  list-style: none;
+  gap: 16px;
+  padding: 24px;
+}
+
+.item {
+  display: grid;
+  gap: 15px;
+  font-size: 14px;
+  padding: 0 8px;
+  border-radius: 8px;
+  background-color: var(--menu-item-background);
+  align-items: center;
+  text-decoration: none;
+  height: 40px;
+  color: var(--menu-background);
+
+  &:hover{
+    background-color: var(--menu-item-hover);
+    color: var(--menu-item-background);
+  }
 }
